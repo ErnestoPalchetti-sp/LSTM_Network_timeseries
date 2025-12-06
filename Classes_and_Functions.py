@@ -1,4 +1,4 @@
-#Part of this project is based on PyTorch tutorial examples:
+#Part of this file is based on PyTorch tutorial examples:
 #Copyright (c) 2017-2022, Pytorch contributors
 #Licensed under the BSD 3-Clause License.
 
