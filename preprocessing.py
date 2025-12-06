@@ -14,7 +14,7 @@ for record in fitfile.get_messages('record'):
   k=k+1
   for field in record:
     D.add(field.name)
-#print(D)
+
 cols=list(D)
 df=pd.DataFrame(columns=list(D))
 for d in df.columns:
@@ -31,15 +31,6 @@ for record in fitfile.get_messages('record'):
     df.loc[k,field.name] = field.value
   k=k+1
 
-#df=df.drop(columns=['unknown_87'])
-#df=df.drop(columns=['unknown_138'])
-#df=df.drop(columns=['unknown_137'])
-#df=df.drop(columns=['unknown_136'])
-#df=df.drop(columns=['unknown_135'])
-#df=df.drop(columns=['unknown_134'])
-#df=df.drop(columns=['unknown_107'])
-#df=df.drop(columns=['unknown_140'])
-#df=df.drop(columns=['unknown_144'])
 
 cols=list(df.columns)
 cols[cols.index('unknown_143')]='Avg Respiration Rate'
